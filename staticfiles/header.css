@@ -1,0 +1,447 @@
+body
+{
+    margin: 0;
+}
+nav
+{
+    width: 100%;
+    height:50px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.nav-options
+{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width:40%;
+}
+
+.nav-option
+{
+    list-style-type: none;
+}
+
+.nav-option a
+{
+    text-decoration: none;
+    color:black;
+}
+
+.login,.signup,.logout
+{
+    background:black;
+    color: white;
+    padding:10px 10px;
+    margin-left: 5px;
+    border:none;
+    cursor: pointer;
+}
+.logout a
+{
+    text-decoration: none;
+    color:white;
+}
+
+.search
+{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
+.fa-search-nav
+{
+    transform: scale(1.2);
+}
+
+.search-bar
+{
+    width: 100%;
+    height:50px;
+     background-color: black; 
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    position: absolute;
+    top:50px;
+    left:0;
+  
+
+}
+#search-form
+{
+    width: 90%;
+}
+#search-input
+{
+    width: 100%;
+    height:40px;
+    font-size: 20px;
+
+}
+
+.close
+{
+    border: 4px solid black;
+    background-color: white;
+    cursor: pointer;
+    width: 10%;
+    height: 100%;
+
+}
+.fa-rectangle-xmark
+{
+    transform: scale(1.3);
+}
+.search-items
+{
+    width: 100%;
+    max-height: 80vh;
+    overflow: scroll;
+    margin-top: 50px;
+    display: none;
+
+}
+.search-items::-webkit-scrollbar
+{
+    display: none;
+}
+.search-item
+{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    border-bottom: 1px solid black;
+    z-index: 1000;
+}
+.search-item img
+{
+    height: 95%;
+}
+.search-book
+{
+    
+    background:black;
+    color: white;
+    padding:10px 10px;
+    margin-left: 5px;
+    border:none;
+    cursor: pointer;
+}
+.search-book a
+{
+    text-decoration: none;
+    color:white;
+}
+.mypage
+{
+    cursor: pointer;
+}
+
+
+
+
+/*login page div css*/
+
+.loginpage
+{
+    width:100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    margin-top:-50px;
+    
+    position: relative;
+    z-index: 100;
+    display: none;
+    transform: translateY(-1000px);
+    transition: transform 1s linear;
+}
+
+
+.loginpagediv
+{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width:350px;
+    height:350px;
+    position:absolute;
+    box-shadow: 3px 3px 2px -2px gray,
+    3px -3px 2px -2px gray,
+    -3px 3px 2px -2px gray,
+    -3px -3px 2px -2px gray;
+    border-radius: 10px;
+    top:90px;
+    left:130px;
+    
+
+}
+.logincontainer
+{
+   
+    
+    width:100%;
+   margin-left: 20px;
+
+}
+.logincontainer h2
+{
+    margin-top:50px;
+    color: black;
+}
+.logincontainer p
+{
+  
+    font-weight: lighter;
+    font-size: 0.75rem;
+    color:gray;
+}
+.logincontainer input[type="text"]
+{
+    width:250px;
+    height:30px;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+#username
+{
+    margin-top: 0px;
+}
+.logincontainer input[type="password"]
+{
+    width:250px;
+    height:30px;
+    margin-top: 10px;
+    padding-left: 30px;
+
+}
+.logincontainer input[type="password"]::placeholder
+{
+   
+}
+.logincontainer input[type="checkbox"]
+{
+    color:white;
+    background-color: #242B2E;
+    margin-top: 10px;
+}
+input[type="checkbox"]:checked
+{
+    color:white;
+    background-color: #242B2E;
+}
+.logincontainer span
+{
+    font-weight: lighter;
+    font-size: 0.9rem;
+    color:gray;
+    margin-top:-2px;
+    margin-left: 3px;
+}
+.logincontainer button
+{
+    width:280px;
+    height:30px;
+    margin-top: 10px;
+    background-color: #242B2E;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit:hover
+{
+    background-color: #9d9d9d;
+}
+.show
+{
+    background-color: transparent;
+    color: #242B2E;
+    position: absolute;
+    top:268px;
+    left:387px;
+    font-weight: lighter;
+    font-size: small;
+    color: gray;
+    border: none;
+    cursor: pointer;
+}
+.show:hover
+{
+    color:rgb(92, 92, 92)
+}
+.fa-user
+{
+    position: absolute;
+    top:222px;
+    left:160px;
+}
+.fa-unlock
+{
+    position: absolute;
+    top:268px;
+    left:160px;
+}
+.signuplink
+{
+    position: absolute;
+    top:460px;
+    left:160px;
+    color:black;
+    opacity: 0.8;
+    font-size: 15px;
+
+}
+.signuplink a
+{
+    color:purple;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+.close-login-page
+{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    cursor: pointer;
+}
+.signupredirect
+{
+    cursor: pointer;
+    color: purple;
+}
+
+
+/*sign in page css*/
+
+
+
+.signuppage
+{
+    width:100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    margin-top:-70px;
+    z-index:100;
+    display: none;
+    transform: translateY(-1000px);
+    transition: transform 1s linear;
+}
+
+.signupcontainer
+{
+    width:50%;
+    height:90vh;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px -2px gray,
+    3px -3px 2px -2px gray,
+    -3px 3px 2px -2px gray,
+    -3px -3px 2px -2px gray;
+    background-color: white;
+    transform: scale(0.8);
+
+}
+
+.signupform
+{
+    width: 100%;
+    height:100%;
+    text-align: center;
+    
+
+}
+.signupform label
+{
+    text-align: left;
+}
+
+
+
+.quote
+{
+    font-weight: lighter;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+#suform
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    height:100%;
+
+
+}
+#suform label
+{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+#suform input
+{
+    width: 500px;
+    height:50px;
+   font-size: 17px;
+    background-color: white;
+    padding:7px;
+    padding-left: 20px;
+    color:#242B2E;
+    border: 0.5px solid gray;
+}
+#suform div
+{
+    display: flex;
+    justify-content: space-between;
+}
+#reset
+{
+    
+    width:60px;
+    border-radius: 0px;
+    background-color: #242B2E;
+    color: white;
+   padding:10px 10px;
+   cursor: pointer;
+   border: 0.5px solid gray;
+   margin-top: 20px;
+}
+#submit
+{
+    width:60px;
+    border-radius: 0px;
+    background-color: #242B2E;
+    color: white;
+   padding:10px 10px;
+   margin-right: 70px;
+   cursor: pointer;
+   border: 0.5px solid gray;
+   margin-top: 20px;
+}
+#submit:hover
+{
+    background-color: white;
+    color:#242B2E;
+}
+#reset:hover
+{
+    background-color: white;
+    color:#242B2E;
+}
+
+
+.close-signup-page
+{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    cursor: pointer;
+}

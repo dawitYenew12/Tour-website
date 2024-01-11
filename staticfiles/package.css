@@ -1,0 +1,145 @@
+
+.inspiration
+{
+    width:100%;
+    height:400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.inspiration h1
+{
+    text-align: center;
+}
+
+
+.package-options
+{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top:400px;
+    left:0;
+    z-index: 50;
+}
+.package-option
+{
+    width: 25%;
+    height:200px;
+    background-color: white;
+    color:black;
+    border:1px solid black;
+   
+}
+.package-option h2
+{
+    text-align: center;
+}
+.priceplandiv
+{
+    margin-top: 30px;
+    margin-left:150px;
+    margin-bottom: 50px;
+    transform: scale(1.5);
+}
+.priceplan
+{
+    font-size: 25px;
+    font-weight:bold;
+}
+.package-start
+{
+    
+    background:black;
+    color: white;
+    padding:10px 10px;
+    margin-left: 120px;
+    border:none;
+    cursor: pointer;
+}
+.package-start a
+{
+    text-decoration: none;
+    color:white;
+}
+
+.packagecontainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 5px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+.package
+{
+    width: 20%;
+    height: 250px;
+    box-shadow: 3px 3px 2px -2px gray,
+    3px -3px 2px -2px gray,
+    -3px 3px 2px -2px gray,
+    -3px -3px 2px -2px gray;
+}
+.package img
+{
+    width: 100%;
+    height:140px;
+}
+.packageinfo
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.detail
+{
+    background:black;
+    color: white;
+    padding:5px 10px;
+    margin-left: 90px;
+    border:none;
+    cursor: pointer;
+
+}
+.detail a
+{
+    text-decoration: none;
+    color:white;
+}
+
+
+.tour-price-div
+{
+
+   
+}
+.tour-price
+{
+    font-size: 20px;
+    font-weight:bold;
+}
+.nopackage
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.nopackagefound h1
+{
+    text-align: center;
+}
+.nopackagefound p
+{
+    text-align: center;
+}

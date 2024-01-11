@@ -1,0 +1,194 @@
+.fullinfo
+{
+    width: 100%;
+    display: flex;
+    height:90vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+    padding-top:10px;
+
+    
+}
+.userinfocontainer
+{
+    width:35%;
+    height: 100%;
+    box-shadow: 3px 3px 2px -2px gray,
+    3px -3px 2px -2px gray,
+    -3px 3px 2px -2px gray,
+    -3px -3px 2px -2px gray;
+    padding-top:10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.pimg
+
+{
+    height: 30%;
+   text-align: center;
+}
+.userinfocontainer img
+
+{
+    width: 40%;
+    height: 200px;
+    border-radius:50% ;
+    padding:5px 0;
+    border: 1px solid gray;
+}
+.edit
+{
+    height: 5%;
+    text-align: right;
+    padding-right: 15px;
+}
+.edit a
+{
+    text-decoration: none;
+    color: black;
+}
+.fa-pen-to-square
+{
+    cursor: pointer;
+}
+
+.innercontainer
+{
+    width:80;
+    
+    height:55% ;
+
+}
+.innercontainer p
+
+{
+  
+   text-align: center;
+}
+
+.label
+{
+    font-size: 20px;
+    color: rgb(116, 116, 116);
+}
+.data
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+.innercontainer-edit
+{
+    width:80;
+    
+    height:55% ;
+}
+.innercontainer-edit p
+{
+    text-align: center;
+   
+
+}
+input[type='text'],input[type='email']
+{
+    padding:5px 5px;
+    font-size: 18px;
+    font-weight: 600;
+    
+
+}
+ input[type='submit']
+{
+    background:black;
+    color: white;
+    padding:10px 10px;
+    margin-left: 5px;
+    border:none;
+    cursor: pointer;
+}
+
+.tripinfocontainer
+{
+    width: 55%;
+    display: flex;
+    height: 100%;
+    overflow: scroll;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    
+}
+.tripinfocontainer::-webkit-scrollbar
+{
+    display: none;
+}
+.tripinfotable
+{
+    width: 95%;
+    height:200px;
+    display: flex;
+    margin: 10px 0;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    box-shadow: 3px 3px 2px -2px gray,
+    3px -3px 2px -2px gray,
+    -3px 3px 2px -2px gray,
+    -3px -3px 2px -2px gray;
+
+}
+.tripinfotable img
+{
+    width:30%;
+}
+.tripinfotable p
+{
+    text-align: center;
+    
+    color: gray;
+}
+.desc
+{
+    font-size: 15px;
+    
+}
+.tripinfotable h3
+{
+    text-align: center;
+}
+.tripinforow
+{
+    width:65%;
+}
+.deleteplan
+{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.deleteplan a
+{
+    text-decoration: none;
+    color: black;
+}
+.fa-trash-can
+{
+    cursor: pointer;
+    transform: scale(2);
+}
+.pricerow
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.notripsplanned h1
+{
+    text-align: center;
+    color: gray;
+}
