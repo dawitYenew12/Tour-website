@@ -1,10 +1,10 @@
 
 .inspiration
 {
+   background-color:  rgb(41 44 49);
     width:100%;
-    height:400px;
-    background-color: black;
-    color: white;
+    height:500px;
+    color: rgb(247, 138, 12);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +13,7 @@
 .inspiration h1
 {
     text-align: center;
+    font-size: 4rem;
 }
 
 
@@ -22,19 +23,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
-    top:400px;
-    left:0;
-    z-index: 50;
 }
+
 .package-option
 {
+    margin-top: 15px;
     width: 25%;
     height:200px;
-    background-color: white;
+    background-color: rgb(225 227 229 / 77%);
     color:black;
-    border:1px solid black;
-   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;   
 }
 .package-option h2
 {
@@ -43,7 +42,7 @@
 .priceplandiv
 {
     margin-top: 30px;
-    margin-left:150px;
+    text-align: center;
     margin-bottom: 50px;
     transform: scale(1.5);
 }
@@ -53,19 +52,25 @@
     font-weight:bold;
 }
 .package-start
-{
-    
-    background:black;
-    color: white;
+{ 
+    background:rgb(41 44 49);
+    color: rgb(255, 255, 255);
     padding:10px 10px;
-    margin-left: 120px;
+    text-align: center;
+    margin-left: 135px;
     border:none;
     cursor: pointer;
+    border-radius: 3px;
 }
+.package-start:hover, .package-start a:hover{
+    background:rgb(0, 0, 0);
+}
+
+
 .package-start a
 {
     text-decoration: none;
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 .packagecontainer
@@ -77,22 +82,21 @@
     column-gap: 5px;
     row-gap: 5px;
     flex-wrap: wrap;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 30px;
 }
 .package
 {
     width: 20%;
-    height: 250px;
-    box-shadow: 3px 3px 2px -2px gray,
-    3px -3px 2px -2px gray,
-    -3px 3px 2px -2px gray,
-    -3px -3px 2px -2px gray;
+    height: 300px;
+    background-color: rgb(225 227 229 / 77%);
+    color:black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .package img
 {
     width: 100%;
-    height:140px;
+    height:180px;
 }
 .packageinfo
 {
@@ -102,13 +106,17 @@
 }
 .detail
 {
-    background:black;
+    background:rgb(41 44 49);
     color: white;
-    padding:5px 10px;
-    margin-left: 90px;
+    padding:10px 10px;
+    margin-left: 110px;
     border:none;
     cursor: pointer;
+    border-radius: 3px;
+}
 
+.detail:hover{
+    background:rgb(0, 0, 0);
 }
 .detail a
 {

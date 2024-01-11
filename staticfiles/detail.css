@@ -8,16 +8,13 @@
 }
 .viewcontainer
 {
+    /* background-color: rgb(225 227 229 / 77%); */
     width:90%;
     height:80vh;
     display:flex;
     justify-content: space-between;
     align-items:center;
-    
-    box-shadow: 3px 3px 2px -2px gray,
-    3px -3px 2px -2px gray,
-    -3px 3px 2px -2px gray,
-    -3px -3px 2px -2px gray;
+    box-shadow:  0 3px 6px rgba(5, 5, 5, 0.2);
 }
 
 .img-view
@@ -71,20 +68,20 @@
     align-items: center;
     margin-top: 100px;
 }
-.book
+.book, .unbook
 {
     padding: 15px 15px;
     background-color: orange;
     color: white;
     cursor: pointer;
+    border: none;
+    border-radius: 3px;
 }
-.unbook
-{
-    padding: 15px 15px;
-    background-color: orange;
-    color: white;
-    cursor: pointer;
+.book:hover, .unbook:hover{
+    background-color: rgb(247, 138, 12);
 }
+
+
 .price
 {
     font-size: 25px;
