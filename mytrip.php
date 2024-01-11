@@ -74,6 +74,42 @@
 
 
 <!-- cancel trip -->
+<div class="tripinfocontainer">
+
+<?php
+if ($plans != []) {
+    foreach ($plans as $plan) {
+        echo
+        "
+<div class='tripinfotable'>
+<img src='" . $plan[3] . "' alt=''>
+<div class='tripinforow'>
+<h3>
+    " . $plan[1] . "
+</h3>
+<p class='desc'>
+" . $plan[2] . " Package
+</p>
+<p ><sup>$</sup> <span class='pricerow'> " . $plan[7] . "</span></p>
+
+</div>
+<div class='deleteplan'>
+<a href=" . "./mytrip.php?user=" . $user[1] . "&deleteid=" . $plan[0] . ">
+<i  class='fa-solid fa-trash-can'></i></a>
+</div>
+</div>
+";
+    }
+} else {
+    echo "<div class='notripsplanned'>
+<h1>No Trips Planned <br>Yet</h1>
+</div> ";
+}
+
+?>
+
+
+</div>
     </div>
 
 

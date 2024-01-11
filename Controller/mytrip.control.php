@@ -164,6 +164,75 @@ class mytrip extends main
 
 
     //cancel logic
+    function deletefromplan()
+    {
+        $userinfo = $this->getuser();
+        $plan = explode(",", $userinfo[4]);
+        $newplan = "";
+        if ($plan != []) {
+            foreach ($plan as $p) {
+                if ($p != $this->id) {
+                    $newplan .= $p . ",";
+                }
+            }
+        }
+
+
+
+
+        $stmt = $this->conn->prepare("UPDATE  guest  
+        SET guest_travel_plan=:p
+            WHERE guest_name=:t");
+        $stmt->bindParam(':p', $newplan);
+        $stmt->bindParam(':t', $this->user);
+
+
+        $stmt->execute();
+    }
+    function deletetourregister()
+    {
+        $tour = [];
+        $stmt = $this->conn->prepare("SELECT * FROM tour_plan WHERE tour_id=:id");
+
+
+        $stmt->bindparam(":id", $this->id);
+        $stmt->execute();
+
+        if ($stmt->rowCount() > 0) {
+            $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+            while ($row = $stmt->fetch()) {
+                $tour_id = $row['tour_id'];
+                $tour_dest = $row['tour_destination'];
+                $tour_package = $row['tour_package'];
+                $tour_image = $row['tour_image'];
+                $tour_ppl_max = $row['tour_ppl_max_amount'];
+                $tour_ppl_registered = $row['tour_ppl_registered_amount'];
+                $tour_start_date = $row['tour_start_date'];
+                $tour_price = $row['tour_price'];
+                $tour_description = $row['tour_description'];
+                $tour[] = $tour_id;
+                $tour[] = $tour_dest;
+                $tour[] = $tour_package;
+                $tour[] = $tour_image;
+                $tour[] = $tour_ppl_max;
+                $tour[] = $tour_ppl_registered;
+                $tour[] = $tour_start_date;
+                $tour[] = $tour_price;
+                $tour[] = $tour_description;
+            }
+        }
+
+        $amount = $tour[5] - 1;
+        $stmt = $this->conn->prepare("UPDATE  tour_plan  
+        SET tour_ppl_registered_amount=:amount
+            WHERE tour_id=:t");
+        $stmt->bindParam(':amount', $amount);
+        $stmt->bindParam(':t', $tour[0]);
+
+
+        $stmt->execute();
+    }
 }
 
 $trip = new mytrip();
